@@ -1,0 +1,7 @@
+FACILITIES	không=178, khách=170, tiện=160, phòng=140, sạn=131
+FOOD&DRINKS	ăn=558, sáng=501, món=253, ngon=251, không=245
+HOTEL	khách=1772, sạn=1559, giá=1050, vụ=982, không=942
+LOCATION	trí=661, vị=661, tiện=535, khách=510, sạn=487
+ROOMS	phòng=3019, sạch=1402, ốc=1047, tiện=891, khách=813
+ROOM_AMENITIES	phòng=1207, tiện=756, nghi=684, đủ=630, đầy=609
+SERVICE	nhân=1456, vụ=1448, viên=1431, khách=1268, phòng=1112

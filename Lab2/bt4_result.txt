@@ -1,0 +1,14 @@
+FACILITIES#negative	không=125, có=102, được=73, tôi=71, và=70
+FACILITIES#positive	tiện=121, khách=102, nghi=87, đủ=83, đầy=82
+FOOD&DRINKS#negative	ăn=215, sáng=211, không=180, món=135, có=117
+FOOD&DRINKS#positive	ăn=298, sáng=248, ngon=180, và=158, cũng=138
+HOTEL#negative	tôi=247, không=241, khách=183, sạn=148, có=144
+HOTEL#positive	tôi=2164, khách=1449, sạn=1285, và=956, có=929
+LOCATION#negative	xa=73, trí=60, vị=59, trung=58, tâm=56
+LOCATION#positive	vị=590, trí=589, đi=518, tiện=506, khách=448
+ROOMS#negative	phòng=685, không=363, tôi=321, có=250, được=183
+ROOMS#positive	phòng=2240, sạch=1279, sẽ=1220, ốc=882, tôi=848
+ROOM_AMENITIES#negative	không=322, phòng=317, có=217, tôi=180, được=159
+ROOM_AMENITIES#positive	phòng=868, tiện=626, đủ=584, đủ=584, đầy=568
+SERVICE#negative	tôi=229, tôi=229, phòng=220, khách=151, có=142
+SERVICE#positive	nhân=1273, vụ=1268, viên=1254, khách=1058, tôi=941
