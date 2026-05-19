@@ -1,0 +1,17 @@
+========== ĐÁNH GIÁ TRUNG BÌNH THEO NGHỀ NGHIỆP ==========
+NGHỀ NGHIỆP               | ĐIỂM TRUNG BÌNH | TỔNG SỐ LƯỢT ĐÁNH GIÁ
+----------------------------------------------------------------------
+Programmer                | 4.25            | 10
+Student                   | 4.00            | 8
+Designer                  | 4.00            | 13
+Nurse                     | 3.86            | 11
+Consultant                | 3.86            | 14
+Journalist                | 3.85            | 17
+Artist                    | 3.73            | 11
+Teacher                   | 3.70            | 5
+Doctor                    | 3.69            | 21
+Lawyer                    | 3.65            | 17
+Salesperson               | 3.65            | 17
+Accountant                | 3.58            | 6
+Engineer                  | 3.56            | 18
+Manager                   | 3.47            | 16

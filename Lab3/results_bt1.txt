@@ -1,0 +1,18 @@
+========== DANH SÁCH PHIM ==========
+MovieID: 1043 | Title: No Country for Old Men (2007) | Average Rating: 3.888888888888889 | Total Ratings: 18
+MovieID: 1030 | Title: The Silence of the Lambs (1991) | Average Rating: 3.142857142857143 | Total Ratings: 7
+MovieID: 1047 | Title: The Social Network (2010) | Average Rating: 3.857142857142857 | Total Ratings: 7
+MovieID: 1050 | Title: Mad Max: Fury Road (2015) | Average Rating: 3.4722222222222223 | Total Ratings: 18
+MovieID: 1010 | Title: Lawrence of Arabia (1962) | Average Rating: 3.4444444444444446 | Total Ratings: 18
+MovieID: 1025 | Title: The Terminator (1984) | Average Rating: 4.055555555555555 | Total Ratings: 18
+MovieID: 1028 | Title: Fight Club (1999) | Average Rating: 3.5 | Total Ratings: 7
+MovieID: 1037 | Title: The Lord of the Rings: The Fellowship of the Ring (2001) | Average Rating: 3.888888888888889 | Total Ratings: 18
+MovieID: 1020 | Title: E.T. the Extra-Terrestrial (1982) | Average Rating: 3.6666666666666665 | Total Ratings: 18
+MovieID: 1015 | Title: Sunset Boulevard (1950) | Average Rating: 4.357142857142857 | Total Ratings: 7
+MovieID: 1040 | Title: Gladiator (2000) | Average Rating: 3.611111111111111 | Total Ratings: 18
+MovieID: 1013 | Title: The Godfather: Part II (1974) | Average Rating: 4.0 | Total Ratings: 17
+MovieID: 1039 | Title: The Lord of the Rings: The Return of the King (2003) | Average Rating: 3.8181818181818183 | Total Ratings: 11
+
+========== TOP MOVIE ==========
+Phim có điểm cao nhất : Sunset Boulevard (1950)
+Điểm trung bình       : 4.357142857142857

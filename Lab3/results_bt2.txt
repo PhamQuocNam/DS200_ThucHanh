@@ -1,0 +1,15 @@
+========== ĐIỂM TRUNG BÌNH THEO THỂ LOẠI ==========
+THỂ LOẠI             | ĐIỂM TRUNG BÌNH
+---------------------------------------------------
+Film-Noir            | 4.36
+Horror               | 4.00
+Mystery              | 4.00
+Fantasy              | 3.86
+Crime                | 3.81
+Drama                | 3.76
+Sci-Fi               | 3.73
+Action               | 3.71
+Thriller             | 3.70
+Family               | 3.67
+Adventure            | 3.63
+Biography            | 3.56

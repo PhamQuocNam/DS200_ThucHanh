@@ -1,0 +1,37 @@
+========== ĐÁNH GIÁ PHIM THEO NHÓM TUỔI ==========
+MovieID    | TITLE                               | AGE GROUP    | AVG RATING
+----------------------------------------------------------------------------------
+1012       | Psycho (1960)                       | 36-50        | 3.50
+1012       | Psycho (1960)                       | 18-35        | 4.50
+1043       | No Country for Old Men (2007)       | 51+          | 4.00
+1043       | No Country for Old Men (2007)       | 36-50        | 3.94
+1043       | No Country for Old Men (2007)       | 18-35        | 3.81
+1030       | The Silence of the Lambs (1991)     | 36-50        | 3.25
+1030       | The Silence of the Lambs (1991)     | 18-35        | 3.00
+1047       | The Social Network (2010)           | 36-50        | 3.67
+1047       | The Social Network (2010)           | 18-35        | 4.00
+1050       | Mad Max: Fury Road (2015)           | 36-50        | 3.64
+1050       | Mad Max: Fury Road (2015)           | 18-35        | 3.36
+1010       | Lawrence of Arabia (1962)           | 36-50        | 3.29
+1010       | Lawrence of Arabia (1962)           | 51+          | 4.50
+1010       | Lawrence of Arabia (1962)           | 18-35        | 3.60
+1025       | The Terminator (1984)               | 51+          | 3.75
+1025       | The Terminator (1984)               | 36-50        | 4.05
+1025       | The Terminator (1984)               | 18-35        | 4.17
+1028       | Fight Club (1999)                   | 18-35        | 3.50
+1028       | Fight Club (1999)                   | 36-50        | 3.50
+1028       | Fight Club (1999)                   | 51+          | 3.50
+1037       | The Lord of the Rings: The Fel...   | 18-35        | 4.00
+1037       | The Lord of the Rings: The Fel...   | 36-50        | 3.83
+1020       | E.T. the Extra-Terrestrial (19...   | 18-35        | 3.56
+1020       | E.T. the Extra-Terrestrial (19...   | 51+          | 3.00
+1020       | E.T. the Extra-Terrestrial (19...   | 36-50        | 3.83
+1015       | Sunset Boulevard (1950)             | 18-35        | 4.17
+1015       | Sunset Boulevard (1950)             | 36-50        | 4.50
+1040       | Gladiator (2000)                    | 18-35        | 3.44
+1040       | Gladiator (2000)                    | 36-50        | 3.81
+1040       | Gladiator (2000)                    | 51+          | 3.50
+1013       | The Godfather: Part II (1974)       | 18-35        | 3.78
+1013       | The Godfather: Part II (1974)       | 36-50        | 4.25
+1039       | The Lord of the Rings: The Ret...   | 18-35        | 3.83
+1039       | The Lord of the Rings: The Ret...   | 36-50        | 3.81

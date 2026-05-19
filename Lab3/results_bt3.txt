@@ -1,0 +1,30 @@
+========== ĐÁNH GIÁ PHIM THEO GIỚI TÍNH ==========
+MovieID    | TITLE                                    | GENDER     | AVG RATING
+----------------------------------------------------------------------------------
+1012       | Psycho (1960)                            | Nữ         | 4.00
+1043       | No Country for Old Men (2007)            | Nam        | 3.92
+1043       | No Country for Old Men (2007)            | Nữ         | 3.83
+1030       | The Silence of the Lambs (1991)          | Nam        | 3.33
+1030       | The Silence of the Lambs (1991)          | Nữ         | 3.00
+1047       | The Social Network (2010)                | Nam        | 4.00
+1047       | The Social Network (2010)                | Nữ         | 3.67
+1050       | Mad Max: Fury Road (2015)                | Nam        | 4.00
+1050       | Mad Max: Fury Road (2015)                | Nữ         | 3.32
+1010       | Lawrence of Arabia (1962)                | Nam        | 3.55
+1010       | Lawrence of Arabia (1962)                | Nữ         | 3.31
+1025       | The Terminator (1984)                    | Nam        | 3.93
+1025       | The Terminator (1984)                    | Nữ         | 4.14
+1028       | Fight Club (1999)                        | Nữ         | 3.50
+1028       | Fight Club (1999)                        | Nam        | 3.50
+1037       | The Lord of the Rings: The Fellowsh...   | Nữ         | 3.80
+1037       | The Lord of the Rings: The Fellowsh...   | Nam        | 4.00
+1020       | E.T. the Extra-Terrestrial (1982)        | Nữ         | 3.55
+1020       | E.T. the Extra-Terrestrial (1982)        | Nam        | 3.81
+1015       | Sunset Boulevard (1950)                  | Nữ         | 4.50
+1015       | Sunset Boulevard (1950)                  | Nam        | 4.33
+1040       | Gladiator (2000)                         | Nữ         | 3.64
+1040       | Gladiator (2000)                         | Nam        | 3.59
+1013       | The Godfather: Part II (1974)            | Nữ         | 3.94
+1013       | The Godfather: Part II (1974)            | Nam        | 4.06
+1039       | The Lord of the Rings: The Return o...   | Nữ         | 3.90
+1039       | The Lord of the Rings: The Return o...   | Nam        | 3.75
