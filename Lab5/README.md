@@ -1,5 +1,7 @@
 # 🎯 Hệ thống Đếm Người Qua Camera – Kafka Architecture
 
+<video controls src="demo.mp4" title="Demo"></video>
+
 ## Tổng quan kiến trúc
 
 ```
