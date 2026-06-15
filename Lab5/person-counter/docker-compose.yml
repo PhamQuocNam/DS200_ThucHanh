@@ -1,0 +1,120 @@
+services:
+  # ─── Kafka Infrastructure ───────────────────────────────────────────────────
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.0
+    container_name: zookeeper
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.0
+    container_name: kafka
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_MESSAGE_MAX_BYTES: 10485760          # 10 MB – cho phép frame ảnh lớn
+      KAFKA_REPLICA_FETCH_MAX_BYTES: 10485760
+    healthcheck:
+      test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9092", "--list"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: kafka-ui
+    depends_on:
+      - kafka
+    ports:
+      - "8080:8080"
+    environment:
+      KAFKA_CLUSTERS_0_NAME: local
+      KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS: kafka:9092
+
+  # ─── PostgreSQL (Storage) ────────────────────────────────────────────────────
+  postgres:
+    image: postgres:16-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_DB: person_counter
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./storage_server/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  # ─── Camera Server ───────────────────────────────────────────────────────────
+  camera-server:
+    build:
+      context: ./camera_server
+    container_name: camera-server
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      KAFKA_TOPIC_FRAMES: raw-frames
+      CAMERA_SOURCE: "0"          # 0 = webcam, hoặc đặt URL RTSP
+      FRAME_RATE: "5"             # số frame/giây gửi lên Kafka
+      FRAME_WIDTH: "640"
+      FRAME_HEIGHT: "480"
+      TCP_HOST: "0.0.0.0"
+      TCP_PORT: "6100"
+    ports:
+      - "6100:6100"
+    volumes:
+      - ./common:/app/common
+
+  # ─── Processing Server ───────────────────────────────────────────────────────
+  processing-server:
+    build:
+      context: ./processing_server
+    container_name: processing-server
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      KAFKA_TOPIC_FRAMES: raw-frames
+      KAFKA_TOPIC_RESULTS: detection-results
+      KAFKA_GROUP_ID: processing-group
+      MODEL_CONFIDENCE: "0.5"
+    volumes:
+      - ./common:/app/common
+
+  # ─── Storage Server ──────────────────────────────────────────────────────────
+  storage-server:
+    build:
+      context: ./storage_server
+    container_name: storage-server
+    depends_on:
+      kafka:
+        condition: service_healthy
+      postgres:
+        condition: service_started
+    environment:
+      KAFKA_BOOTSTRAP_SERVERS: kafka:9092
+      KAFKA_TOPIC_RESULTS: detection-results
+      KAFKA_GROUP_ID: storage-group
+      POSTGRES_DSN: postgresql://admin:secret@postgres:5432/person_counter
+      API_PORT: "8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./common:/app/common
+
+volumes:
+  pgdata:
